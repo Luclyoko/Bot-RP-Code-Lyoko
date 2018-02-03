@@ -79,6 +79,6 @@ bot.on('message', message => {
             message.channel.sendMessage("```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
         }
-})
+});
 
 client.login(process.env.BOT_TOKEN);
