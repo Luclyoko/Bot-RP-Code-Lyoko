@@ -1,7 +1,7 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "0.0.0",
+  "name": "bot-rp-code-lyoko",
+  "description": "Bot du RP Code Lyoko host par Heroku",
+  "version": "2.0.0",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
