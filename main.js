@@ -30,8 +30,8 @@ bot.on('message', message => {
             message.delete();
         }
 
-        if(message.content.startsWith(prefix + "si ")){
-            message.channel.sendMessage(message.content.replace(prefix + "si ", "__**Sissi :**__ "));
+        if(message.content.startsWith(prefix + "sis ")){
+            message.channel.sendMessage(message.content.replace(prefix + "sis ", "__**Sissi :**__ "));
             message.delete();
         }
 
@@ -67,6 +67,46 @@ bot.on('message', message => {
 
         if(message.content.startsWith(prefix + "w ")){
             message.channel.sendMessage(message.content.replace(prefix + "w ", "__**William :**__ "));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "mil ")){
+            message.channel.sendMessage(message.content.replace(prefix + "mil ", "__**Milly :**__"));
+            message.delete();
+        }
+            
+        if(message.content.startsWith(prefix + "tam ")){
+            message.channel.sendMessage(message.content.replace(prefix + "tam ", "__**Tamiya :**__"));
+            message.delete();
+        }
+            
+        if(message.content.startsWith(prefix + "her ")){
+            message.channel.sendMessage(message.content.replace(prefix + "her ", "__**Hervé :**__"));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "nic ")){
+            message.channel.sendMessage(message.content.replace(prefix + "nic ", "__**Nicolas :**__"));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "hel ")){
+            message.channel.sendMessage(message.content.replace(prefix + "hel ", "__**Héloïse :**__"));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "hert ")){
+            message.channel.sendMessage(message.content.replace(prefix + "hert ", "__**Mme Hertz :**__"));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "mey ")){
+            message.channel.sendMessage(message.content.replace(prefix + "mey ", "__**Mme Meyer :**__"));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "p ")){
+            message.channel.sendMessage(message.content("Tu n'as pas accès à cette commande !"));
             message.delete();
         }
 
