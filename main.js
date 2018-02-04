@@ -116,7 +116,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "sms ")){
-            message.channel.sendMessage("```" + message.content.replace(prefix + "sms ", "") + "```");
+            message.channel.sendMessage("@here ```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
         }
 });
