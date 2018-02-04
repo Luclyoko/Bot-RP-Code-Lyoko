@@ -106,7 +106,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "p ")){
-            message.channel.sendMessage(message.content("Tu n'as pas accès à cette commande !"));
+            message.channel.sendMessage("Tu n'as pas accès à cette commande !");
             message.delete();
         }
 
