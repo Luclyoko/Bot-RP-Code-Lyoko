@@ -49,6 +49,21 @@ bot.on('message', message => {
             message.channel.sendMessage(message.content.replace(prefix + "y ", "<:yumi:410149300203683841> **:** "));
             message.delete();
         }
+    
+        if(message.content.startsWith(prefix + "py ")){
+            message.channel.sendMessage(message.content.replace(prefix + "py ", "**Mr Ishiyama :** "));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "my ")){
+            message.channel.sendMessage(message.content.replace(prefix + "my ", "**Mme Ishiyama :** "));
+            message.delete();
+        }
+    
+        if(message.content.startsWith(prefix + "hir ")){
+            message.channel.sendMessage(message.content.replace(prefix + "hir ", "**Hiroki :** "));
+            message.delete();
+        }
 
         if(message.content.startsWith(prefix + "u ")){
             message.channel.sendMessage(message.content.replace(prefix + "u ", "<:ulrich:410149299444383765> **:** "));
