@@ -41,7 +41,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "j ")){
-            message.channel.sendMessage(message.content.replace(prefix + "j ", "<:jeremy:410149297619992587> **:**"));
+            message.channel.sendMessage(message.content.replace(prefix + "j ", "<:jeremy:410149297619992587> **:** "));
             message.delete();
         }
 
