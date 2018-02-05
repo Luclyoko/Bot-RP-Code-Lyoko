@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const yumi = bot.emojis.get("410149300203683841");
 
 var bot = new Discord.Client();
 var prefix = ("!");
@@ -47,7 +46,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "y ")){
-            message.channel.sendMessage(message.content.replace(prefix + "y ", yumi + " **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "y ", <:yumi:410149300203683841> " **:** "));
             message.delete();
         }
 
