@@ -11,7 +11,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "a ")){
-            message.channel.sendMessage(message.content.replace(prefix + "a ", "__**:aelita: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "a ", ":aelita: **:** "));
             message.delete();
         }
 
@@ -26,37 +26,37 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "jim ")){
-            message.channel.sendMessage(message.content.replace(prefix + "jim ", "__**:jim: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "jim ", ":jim: **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "sis ")){
-            message.channel.sendMessage(message.content.replace(prefix + "sis ", "__**:sissi: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "sis ", ":sissi: **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "del ")){
-            message.channel.sendMessage(message.content.replace(prefix + "del ", "__**:delmas: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "del ", ":delmas: **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "j ")){
-            message.channel.sendMessage(message.content.replace(prefix + "j ", "__**:jeremy: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "j ", ":jeremy: **:**"));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "y ")){
-            message.channel.sendMessage(message.content.replace(prefix + "y ", "__**:yumi: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "y ", ":yumi: **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "u ")){
-            message.channel.sendMessage(message.content.replace(prefix + "u ", "__**:ulrich: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "u ", ":ulrich: **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "o ")){
-            message.channel.sendMessage(message.content.replace(prefix + "o ", "__**:odd: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "o ", ":odd: **:** "));
             message.delete();
         }
 
@@ -66,7 +66,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "w ")){
-            message.channel.sendMessage(message.content.replace(prefix + "w ", "__**:william: :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "w ", ":william: **:** "));
             message.delete();
         }
     
@@ -111,7 +111,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "x ")){
-            message.channel.sendMessage(message.content.replace(prefix + "x ", "_**:xana: ") + "**_");
+            message.channel.sendMessage(message.content.replace(prefix + "x ", ":xana: _**") + "**_");
             message.delete();
         }
 
