@@ -11,7 +11,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "a ")){
-            message.channel.sendMessage(message.content.replace(prefix + "a ", ":aelita: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "a ", emoji.name("aelita") + " **:** "));
             message.delete();
         }
 
