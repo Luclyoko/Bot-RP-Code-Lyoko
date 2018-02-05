@@ -46,8 +46,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "y ")){
-            message.channel.sendMessage(message.content.replace(prefix + "y ", "<:yumi:410149300203683841>
- **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "y ", ":yumi:410149300203683841 **:** "));
             message.delete();
         }
 
