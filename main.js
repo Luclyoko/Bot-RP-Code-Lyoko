@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const yumi = bot.emojis.get("410149300203683841");
 
 var bot = new Discord.Client();
 var prefix = ("!");
@@ -11,7 +12,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "a ")){
-            message.channel.sendMessage(message.content.replace(prefix + "a ", emoji.name("aelita") + " **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "a ", ":aelita: **:** "));
             message.delete();
         }
 
@@ -46,7 +47,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "y ")){
-            message.channel.sendMessage(message.content.replace(prefix + "y ", ":yumi: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "y ", yumi + " **:** "));
             message.delete();
         }
 
