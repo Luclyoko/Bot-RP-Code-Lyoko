@@ -11,37 +11,37 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "a ")){
-            message.channel.sendMessage(message.content.replace(prefix + "a ", ":aelita: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "a ", "<:aelita:410149295619047458> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "pj ")){
-            message.channel.sendMessage(message.content.replace(prefix + "pj ", "__**Père de Jérémie :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "pj ", "**Père de Jérémie :** "));
             message.delete();
         }
         
         if(message.content.startsWith(prefix + "mj")){
-            message.channel.sendMessage(message.content.replace(prefix + "mj ", "__**Mère de Jérémie :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "mj ", "**Mère de Jérémie :** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "jim ")){
-            message.channel.sendMessage(message.content.replace(prefix + "jim ", ":jim: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "jim ", "<:jim:410149301210054656> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "sis ")){
-            message.channel.sendMessage(message.content.replace(prefix + "sis ", ":sissi: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "sis ", "<:sissi:410149300929167360> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "del ")){
-            message.channel.sendMessage(message.content.replace(prefix + "del ", ":delmas: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "del ", "<:delmas:410149296881532953> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "j ")){
-            message.channel.sendMessage(message.content.replace(prefix + "j ", ":jeremy: **:**"));
+            message.channel.sendMessage(message.content.replace(prefix + "j ", "<:jeremy:410149297619992587> **:**"));
             message.delete();
         }
 
@@ -51,57 +51,57 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "u ")){
-            message.channel.sendMessage(message.content.replace(prefix + "u ", ":ulrich: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "u ", "<:ulrich:410149299444383765> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "o ")){
-            message.channel.sendMessage(message.content.replace(prefix + "o ", ":odd: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "o ", "<:odd:410149300094631937> **:** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "s ")){
-            message.channel.sendMessage(message.content.replace(prefix + "s ", "__**Sam :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "s ", "**Sam :** "));
             message.delete();
         }
 
         if(message.content.startsWith(prefix + "w ")){
-            message.channel.sendMessage(message.content.replace(prefix + "w ", ":william: **:** "));
+            message.channel.sendMessage(message.content.replace(prefix + "w ", "<:william:410149301029830658> **:** "));
             message.delete();
         }
     
         if(message.content.startsWith(prefix + "mil ")){
-            message.channel.sendMessage(message.content.replace(prefix + "mil ", "__**Milly :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "mil ", "**Milly :** "));
             message.delete();
         }
             
         if(message.content.startsWith(prefix + "tam ")){
-            message.channel.sendMessage(message.content.replace(prefix + "tam ", "__**Tamiya :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "tam ", "**Tamiya :** "));
             message.delete();
         }
             
         if(message.content.startsWith(prefix + "her ")){
-            message.channel.sendMessage(message.content.replace(prefix + "her ", "__**Hervé :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "her ", "**Hervé :** "));
             message.delete();
         }
     
         if(message.content.startsWith(prefix + "nic ")){
-            message.channel.sendMessage(message.content.replace(prefix + "nic ", "__**Nicolas :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "nic ", "**Nicolas :** "));
             message.delete();
         }
     
         if(message.content.startsWith(prefix + "hel ")){
-            message.channel.sendMessage(message.content.replace(prefix + "hel ", "__**Héloïse :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "hel ", "**Héloïse :** "));
             message.delete();
         }
     
         if(message.content.startsWith(prefix + "hert ")){
-            message.channel.sendMessage(message.content.replace(prefix + "hert ", "__**Mme Hertz :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "hert ", "**Mme Hertz :** "));
             message.delete();
         }
     
         if(message.content.startsWith(prefix + "mey ")){
-            message.channel.sendMessage(message.content.replace(prefix + "mey ", "__**Mme Meyer :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "mey ", "**Mme Meyer :** "));
             message.delete();
         }
     
@@ -111,7 +111,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "x ")){
-            message.channel.sendMessage(message.content.replace(prefix + "x ", ":xana: _**") + "**_");
+            message.channel.sendMessage(message.content.replace(prefix + "x ", "<:xana:410149299717013507> **") + "**");
             message.delete();
         }
 
