@@ -39,6 +39,11 @@ bot.on('message', message => {
             message.channel.sendMessage(message.content.replace(prefix + "del ", "<:delmas:410149296881532953> **:** "));
             message.delete();
         }
+    
+        if(message.content.startsWith(prefix + "yol ")){
+            message.channel.sendMessage(message.content.replace(prefix + "yol ", "<:yolande:410531706295156737> **:** "));
+            message.delete();
+        }
 
         if(message.content.startsWith(prefix + "j ")){
             message.channel.sendMessage(message.content.replace(prefix + "j ", "<:jeremy:410149297619992587> **:** "));
