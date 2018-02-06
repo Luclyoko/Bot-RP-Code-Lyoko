@@ -91,7 +91,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "mil ")){
-            message.channel.sendMessage(message.content.replace(prefix + "mil ", "**Milly :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "mil ", "<:milly:410541886051450881> **:** "));
             message.delete();
         }
             
