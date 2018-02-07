@@ -136,7 +136,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "smsa")){
-            if(message.author.role.id("409408168582447114")){
+            if(message.author.role.find("409408168582447114")){
             message.channel.sendMessage("@here Nouveau message de Jérémie pour Aelita ```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
             }
