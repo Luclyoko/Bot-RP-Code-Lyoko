@@ -126,7 +126,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "p ")){
-            message.channel.sendMessage(message.content.replace(prefix + "p ", "**Pauline :**"));
+            message.channel.sendMessage(message.content.replace(prefix + "p ", "**Pauline :** "));
             message.delete();
         }
 
