@@ -136,7 +136,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "smsa")){
-            if(message.author.role.name("Jérémie"){
+            if(message.author.role.name("Jérémie")){
             message.channel.sendMessage("@here Nouveau message de Jérémie pour Aelita ```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
             }
