@@ -106,7 +106,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "nic ")){
-            message.channel.sendMessage(message.content.replace(prefix + "nic ", "**Nicolas :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "nic ", "<:nicolas:410862213163646977> **:** "));
             message.delete();
         }
     
@@ -135,11 +135,9 @@ bot.on('message', message => {
             message.delete();
         }
 
-        if(message.content.startsWith(prefix + "smsa")){
-            if(message.author.role.find("409408168582447114")){
-            message.channel.sendMessage("@here Nouveau message de Jérémie pour Aelita ```" + message.content.replace(prefix + "sms ", "") + "```");
+        if(message.content.startsWith(prefix + "sms ")){
+            message.channel.sendMessage("@here ```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
-            }
         }
 });
 
