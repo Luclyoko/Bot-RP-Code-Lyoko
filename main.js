@@ -101,7 +101,7 @@ bot.on('message', message => {
         }
             
         if(message.content.startsWith(prefix + "her ")){
-            message.channel.sendMessage(message.content.replace(prefix + "her ", "**Hervé :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "her ", "<:herve:410854434642329600> **:** "));
             message.delete();
         }
     
@@ -135,9 +135,11 @@ bot.on('message', message => {
             message.delete();
         }
 
-        if(message.content.startsWith(prefix + "sms ")){
-            message.channel.sendMessage("@here ```" + message.content.replace(prefix + "sms ", "") + "```");
+        if(message.content.startsWith(prefix + "smsa")){
+            if(message.author.role.name("Jérémie"){
+            message.channel.sendMessage("@here Nouveau message de Jérémie pour Aelita ```" + message.content.replace(prefix + "sms ", "") + "```");
             message.delete();
+            }
         }
 });
 
