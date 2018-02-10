@@ -136,8 +136,12 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "sms ")){
-            message.channel.sendMessage("@here ```" + message.content.replace(prefix + "sms ", "") + "```");
-            message.delete();
+            if(message.member.roles.find("Yumi")){
+                message.channel.sendMessage("Yumi est bien détectée !");
+            }
+            else {
+                message.channel.sendMessage("Yumi na pas ete detectee !");
+            }
         }
 });
 
