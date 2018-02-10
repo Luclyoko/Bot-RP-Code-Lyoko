@@ -157,6 +157,7 @@ bot.on('message', message => {
             if(message.member.roles.find("name", "Pauline")){
                message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Pauline !** ```") + "```");
             }
+            message.delete();
         }
 });
 
