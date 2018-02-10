@@ -136,7 +136,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "sms ")){
-            if(message.member.roles.find("name", "Yumi"){
+            if(message.member.roles.find("name", "Yumi")){
                message.channel.sendMessage("Yumi detectee");
             }
             else return;
