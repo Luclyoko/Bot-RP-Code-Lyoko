@@ -139,6 +139,7 @@ bot.on('message', message => {
             if(message.member.roles.find(role.getName() === "Yumi")){
                message.channel.sendMessage("Yumi detectee");
             }
+            else return;
         }
 });
 
