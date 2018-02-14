@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 var bot = new Discord.Client();
-var prefix = ("!");
+var prefix = (".");
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "vec les dialogues !", type: 0}});
