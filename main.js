@@ -4,7 +4,7 @@ var bot = new Discord.Client();
 var prefix = (".");
 
 bot.on('ready', () => {
-    bot.user.setPresence({ music: { name: "des gens faire du RP !", type: 0}});
+    bot.user.setPresence({ game: { name: "faire du RP !", type: 0}});
     console.log("Bot pret!");
 });
 
