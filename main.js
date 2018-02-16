@@ -10,6 +10,10 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     if(message.author.bot) return;
+        if(message.content.startsWith(prefix + "changestate ")){
+            bot.user.setPresence({ game: { name: message.content.replace(prefix + "changestate "), type: 0}});
+        }
+    
         if(message.content.startsWith(prefix + "a ")){
             message.channel.sendMessage(message.content.replace(prefix + "a ", "<:aelita:410149295619047458> **:** "));
             message.delete();
