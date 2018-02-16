@@ -4,14 +4,13 @@ var bot = new Discord.Client();
 var prefix = (".");
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: "faire du RP !", type: 0}});
     console.log("Bot pret!");
 });
 
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "changestate ")){
-            bot.user.setPresence({ game: { name: message.content.replace(prefix + "changestate "), type: 0}});
+            bot.user.setPresence({ game: { name: message.content.replace(prefix + "changestate ", ""), type: 0}});
         }
     
         if(message.content.startsWith(prefix + "a ")){
