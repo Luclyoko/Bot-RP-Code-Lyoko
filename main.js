@@ -4,7 +4,7 @@ var bot = new Discord.Client();
 var prefix = (".");
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: "vec les dialogues !", type: 0}});
+    bot.user.setPresence({ stream: { name: "Faire du RP !", type: 0}});
     console.log("Bot pret!");
 });
 
@@ -16,7 +16,7 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "pj ")){
-            message.channel.sendMessage(message.content.replace(prefix + "pj ", "**Père de Jérémie :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "pj ", "<:perejeremy:411920801999224853> **:** "));
             message.delete();
         }
         
@@ -66,7 +66,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "hir ")){
-            message.channel.sendMessage(message.content.replace(prefix + "hir ", "**Hiroki :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "hir ", "<:hiroki:411920802787885057> **:** "));
             message.delete();
         }
 
@@ -116,7 +116,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "hert ")){
-            message.channel.sendMessage(message.content.replace(prefix + "hert ", "**Mme Hertz :** "));
+            message.channel.sendMessage(message.content.replace(prefix + "hert ", "<:hertz:411920803723214859> **:** "));
             message.delete();
         }
     
