@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "etatbot ")){
-            bot.user.setPresence({ game: { name: message.content.delete(prefix + "etatbot "), type: 0}});
+            bot.user.setPresence({ game: "faire du RP !", type: 0}});
         }
     
         if(message.content.startsWith(prefix + "a ")){
