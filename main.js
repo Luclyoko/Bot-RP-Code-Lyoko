@@ -7,6 +7,12 @@ bot.on('ready', () => {
     console.log("Bot pret!");
 });
 
+bot.on('reaction', reaction => {
+    if(reaction.message.find("name", "x")){
+        message.delete();
+    }
+});
+
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "a ")){
