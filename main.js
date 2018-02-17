@@ -15,9 +15,10 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "a ")){
+            if(message.member.roles.find("name", "Aelita")){
             message.channel.sendMessage(message.content.replace(prefix + "a ", "<:aelita:410149295619047458> **:** "));
             message.delete();
-        }
+        }}
 
         if(message.content.startsWith(prefix + "pj ")){
             message.channel.sendMessage(message.content.replace(prefix + "pj ", "<:perejeremy:411920801999224853> **:** "));
@@ -50,14 +51,16 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "j ")){
+            if(message.member.roles.find("name", "Jérémie")){
             message.channel.sendMessage(message.content.replace(prefix + "j ", "<:jeremy:410149297619992587> **:** "));
             message.delete();
-        }
+        }}
 
         if(message.content.startsWith(prefix + "y ")){
+            if(message.member.roles.find("name", "Yumi")){
             message.channel.sendMessage(message.content.replace(prefix + "y ", "<:yumi:410149300203683841> **:** "));
             message.delete();
-        }
+        }}
     
         if(message.content.startsWith(prefix + "py ")){
             message.channel.sendMessage(message.content.replace(prefix + "py ", "**Mr Ishiyama :** "));
@@ -75,14 +78,16 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "u ")){
+            if(message.member.roles.find("name", "Ulrich")){
             message.channel.sendMessage(message.content.replace(prefix + "u ", "<:ulrich:410149299444383765> **:** "));
             message.delete();
-        }
+        }}
 
         if(message.content.startsWith(prefix + "o ")){
+            if(message.member.roles.find("name", "Odd")){
             message.channel.sendMessage(message.content.replace(prefix + "o ", "<:odd:410149300094631937> **:** "));
             message.delete();
-        }
+        }}
 
         if(message.content.startsWith(prefix + "s ")){
             message.channel.sendMessage(message.content.replace(prefix + "s ", "**Sam :** "));
@@ -90,9 +95,10 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "w ")){
+            if(message.member.roles.find("name", "William")){
             message.channel.sendMessage(message.content.replace(prefix + "w ", "<:william:410149301029830658> **:** "));
             message.delete();
-        }
+        }}
     
         if(message.content.startsWith(prefix + "mil ")){
             message.channel.sendMessage(message.content.replace(prefix + "mil ", "<:milly:410541886051450881> **:** "));
@@ -130,9 +136,10 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "p ")){
+            if(message.member.roles.find("name", "Pauline")){
             message.channel.sendMessage(message.content.replace(prefix + "p ", "**Pauline :** "));
             message.delete();
-        }
+        }}
 
         if(message.content.startsWith(prefix + "x ")){
             message.channel.sendMessage(message.content.replace(prefix + "x ", "<:xana:410149299717013507> **") + "**");
