@@ -173,7 +173,7 @@ bot.on('message', message => {
 });
 
 bot.on('reaction', reaction => {
-    if(reaction.content(":x:")){
+    if(reaction.content === ':x:'){
         message.delete();
     }
 });
