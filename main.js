@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "changestate ")){
-            bot.setPresence.game(message.content.replace(prefix + "changestate", " "));
+            bot.setPresence.game(message.content.replace(prefix + "changestate ", " "));
         }
     
         if(message.content.startsWith(prefix + "a ")){
