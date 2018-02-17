@@ -7,14 +7,12 @@ bot.on('ready', () => {
     console.log("Bot pret!");
 });
 
-bot.on('reaction', reaction => {
-    if(reaction.message.find("name", "x")){
-        message.delete();
-    }
-});
-
 bot.on('message', message => {
     if(message.author.bot) return;
+        if(message.content.startsWith(prefix + "changestate ")){
+            bot.setPresence.game(message.content.replace(prefix + "changestate", " "));
+        }
+    
         if(message.content.startsWith(prefix + "a ")){
             message.channel.sendMessage(message.content.replace(prefix + "a ", "<:aelita:410149295619047458> **:** "));
             message.delete();
@@ -142,9 +140,8 @@ bot.on('message', message => {
 
         if(message.content.startsWith(prefix + "sms ")){
             if(message.member.roles.find("name", "Yumi")){
-               if(message.channel("name", "yumi")){
                message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Yumi !** ```") + "```");
-            }}
+            }
             
             if(message.member.roles.find("name", "Ulrich")){
                message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Ulrich !** ```") + "```");
