@@ -172,10 +172,4 @@ bot.on('message', message => {
         }
 });
 
-bot.on('reaction', reaction => {
-    if(reaction.content === ':x:'){
-        message.delete();
-    }
-});
-
 bot.login(process.env.BOT_TOKEN);
