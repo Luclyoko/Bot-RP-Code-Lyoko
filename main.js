@@ -136,7 +136,7 @@ bot.on('message', message => {
 
         if(message.content.startsWith(prefix + "sms ")){
             if(message.member.roles.find("name", "Yumi")){
-               if(message.channel.find("name", "yumi")){
+               if(message.channel("name", "yumi")){
                message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Yumi !** ```") + "```");
             }}
             
