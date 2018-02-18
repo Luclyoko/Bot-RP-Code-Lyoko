@@ -50,7 +50,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "mas ")){
-            message.channel.sendMessage(message.content.replace(prefix + "mas ", "__**Mr Massart :**__ "));
+            message.channel.sendMessage(message.content.replace(prefix + "mas ", "**Mr Massart :** "));
             message.delete();
         }
     
