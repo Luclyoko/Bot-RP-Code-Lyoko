@@ -9,6 +9,10 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     if(message.author.bot) return;
+        if(message.content.startsWith(prefix + "annoncesrp ")){
+            bot.categoryChannel("Kadic").sendMessage(message.content.replace(prefix + "annoncesrp ", ""));
+        }
+                                     
         if(message.content.startsWith(prefix + "changestate ")){
             bot.user.setPresence({ game: { name: message.content.replace(prefix + "changestate ", ""), type: 0 } });
             message.delete();
