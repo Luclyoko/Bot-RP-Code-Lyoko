@@ -49,6 +49,11 @@ bot.on('message', message => {
             message.delete();
         }
     
+        if(message.content.startsWith(prefix + "mas ")){
+            message.channel.sendMessage(message.content.replace(prefix + "mas ", "__**Mr Massart :**__ "));
+            message.delete();
+        }
+    
         if(message.content.startsWith(prefix + "yol ")){
             message.channel.sendMessage(message.content.replace(prefix + "yol ", "<:yolande:410531706295156737> **:** "));
             message.delete();
