@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
-            message.categoryChannel("Kadic").sendMessage(message.content.replace(prefix + "annoncesrp ", ""));
+            message.channel.categoryChannel("Kadic").sendMessage(message.content.replace(prefix + "annoncesrp ", ""));
         }
                                      
         if(message.content.startsWith(prefix + "changestate ")){
