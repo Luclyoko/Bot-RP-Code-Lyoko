@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
-            message.channel.categoryChannel("name", "Kadic").sendMessage(message.content.replace(prefix + "annoncesrp ", ""));
+            message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "@acteurs_rp **") + "**");
         }
                                      
         if(message.content.startsWith(prefix + "changestate ")){
@@ -29,7 +29,7 @@ bot.on('message', message => {
             message.delete();
         }
         
-        if(message.content.startsWith(prefix + "mj")){
+        if(message.content.startsWith(prefix + "mj ")){
             message.channel.sendMessage(message.content.replace(prefix + "mj ", "**Mère de Jérémie :** "));
             message.delete();
         }
