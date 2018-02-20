@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
-            message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "<@acteurs_rp> **") + "**");
+            message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "<@&415119522597568512> **") + "**");
         }
                                      
         if(message.content.startsWith(prefix + "changestate ")){
