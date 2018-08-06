@@ -17,7 +17,7 @@ bot.on('message', message => {
         }
                                      
         if(message.content.startsWith(prefix + "changestate ")){
-            if(message.member.roles.find("name", "Admin" || "Boteur")){
+            if(message.member.roles.find("name", "Admin") || message.member.roles.find("name", "Boteur")){
             bot.user.setPresence({ game: { name: message.content.replace(prefix + "changestate ", ""), type: 0 } });
             }
                 message.delete();
