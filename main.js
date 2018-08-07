@@ -237,8 +237,8 @@ bot.on('message', message => {
             message.delete();
         }
     
-        if(message.content === 'help'){
-            message.channel.sendMessage('__**Liste des commandes du bot RP Code Lyoko :**__<br/>Test')}
+        if(message.content === prefix + 'help'){
+            message.channel.sendMessage('__**Liste des commandes du bot RP Code Lyoko :**__\nTest')}
 
 });
 
