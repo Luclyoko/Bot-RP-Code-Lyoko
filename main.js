@@ -238,7 +238,8 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help'){
-            message.channel.sendMessage('__**Liste des commandes du bot RP Code Lyoko :**__\nTest')}
+            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko :**__\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\nADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord\nADM .changestate >> Permet de modifier l'êtat du bot\n.a >> Permet de parler avec Aelita (rôle Aelita requis)\n.j >> Permet de parler avec Jérémie (rôle Jérémie requis)\n.o >> Permet de parler avec Odd (rôle Odd requis)\n.u >> Permet de parler avec Ulrich (rôle Ulrich requis)\n.y >> Permet de parler avec Yumi (rôle Yumi requis)\n.jfdkfdj
+")}
 
 });
 
