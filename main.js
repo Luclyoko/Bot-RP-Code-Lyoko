@@ -238,7 +238,7 @@ bot.on('message', message => {
         }
     
         if(message.content.startsWith(prefix + "help ")){
-            message.channel.sendMessage('__**Liste des commandes du bot RP Code Lyoko :**__' && 'Test')}
+            message.channel.sendMessage('__**Liste des commandes du bot RP Code Lyoko :**__' 'Test')}
 
 });
 
