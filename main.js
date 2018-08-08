@@ -238,7 +238,7 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help'){
-            message.channel.sendMessage("test1" + "test2);
+            message.channel.sendMessage("test1" + "test2");
             message.delete();
         }
 
