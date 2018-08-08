@@ -11,7 +11,7 @@ bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
             if(message.member.roles.find("name", "Admin")){
-            message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "<@&415119522597568512> **") + "**");
+                message.guilds.channels.all(message.sendMessage('test')
             }
                 message.delete();
         }
