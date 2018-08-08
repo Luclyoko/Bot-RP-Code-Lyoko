@@ -141,6 +141,20 @@ bot.on('message', message => {
             }
                 message.delete();
         }
+
+        if(message.content.startsWith(prefix + "p ")){
+            if(message.member.roles.find("name", "Pauline")){
+            message.channel.sendMessage(message.content.replace(prefix + "p ", "**Pauline :** "));
+            }
+                message.delete();
+        }
+
+        if(message.content.startsWith(prefix + "tyr ")){
+            if(message.member.roles.find("name", "Persos secondaires")){
+            message.channel.sendMessage(message.content.replace(prefix + "tyr ", "**Tyron :** "));
+            }
+                message.delete();
+        }
     
         if(message.content.startsWith(prefix + "mil ")){
             if(message.member.roles.find("name", "Persos secondaires")){
@@ -170,13 +184,6 @@ bot.on('message', message => {
                 message.delete();
         }
     
-        if(message.content.startsWith(prefix + "hel ")){
-            if(message.member.roles.find("name", "Persos secondaires")){
-            message.channel.sendMessage(message.content.replace(prefix + "hel ", "**Héloïse :** "));
-            }
-                message.delete();
-        }
-    
         if(message.content.startsWith(prefix + "hert ")){
             if(message.member.roles.find("name", "Persos secondaires")){
             message.channel.sendMessage(message.content.replace(prefix + "hert ", "<:hertz:411920803723214859> **:** "));
@@ -189,14 +196,7 @@ bot.on('message', message => {
             message.channel.sendMessage(message.content.replace(prefix + "mey ", "**Mme Meyer :** "));
             }
                 message.delete();
-        }
-    
-        if(message.content.startsWith(prefix + "p ")){
-            if(message.member.roles.find("name", "Pauline")){
-            message.channel.sendMessage(message.content.replace(prefix + "p ", "**Pauline :** "));
-            }
-                message.delete();
-        }
+        }c
 
         if(message.content.startsWith(prefix + "x ")){
             if(message.member.roles.find("name", "Persos secondaires")){
@@ -238,7 +238,7 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help'){
-            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\nADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord\nADM .changestate >> Permet de modifier l'êtat du bot\n.a >> Permet de parler avec Aelita (rôle Aelita requis)\n.j >> Permet de parler avec Jérémie (rôle Jérémie requis)\n.o >> Permet de parler avec Odd (rôle Odd requis)\n.u >> Permet de parler avec Ulrich (rôle Ulrich requis)\n.y >> Permet de parler avec Yumi (rôle Yumi requis)")
+            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\nADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord\nADM .changestate >> Permet de modifier l'êtat du bot\n.sms >> Permet d'envoyer des SMS dans les salons appropriés (détecte votre rôle dans le RP)\n.a >> Permet de parler avec Aelita (rôle Aelita requis)\n.j >> Permet de parler avec Jérémie (rôle Jérémie requis)\n.o >> Permet de parler avec Odd (rôle Odd requis)\n.u >> Permet de parler avec Ulrich (rôle Ulrich requis)\n.y >> Permet de parler avec Yumi (rôle Yumi requis)\n.w >> Permet de parler avec William (rôle William requis)\n.p >> Permet de parler avec Pauline (rôle Pauline requis)\n.tyr >> Permet de parler avec Tyron (rôle Persos secondaires requis)\n >> Permet de parler avec Samantha (rôle Persos secondaires requis)\n.sis >> Permet de parler avec Sissi (rôle Persos secondaires requis)\n.jim >> Permet de parler avec Jim (rôle Persos secondaires requis)\n.del >> Permet de parler avec Delmas (rôle Persos secondaires requis)\n.hert >> Permet de parler avec Hertz (rôle Persos secondaires requis)\n.her >> Permet de parler avec Hervé (rôle Persos secondaires requis)\n.nic >> Permet de parler avec Nicolas (rôle Persos secondaires requis)\n.yol >> Permet de parler avec Yolande (rôle Persos secondaires requis)\n.hir >> Permet de parler avec Hiroki (rôle Persos secondaires requis)\n.py >> Permet de parler avec Mr.Ishiyama (rôle Persos secondaires requis)\n.my >> Permet de parler avec Mme.Ishiyama (rôle Persos secondaires requis)\n.mil >> Permet de parler avec Milly (rôle Persos secondaires requis)\n.tam >> Permet de parler avec Tamiya (rôle Persos secondaires requis)\n.mey >> Permet de parler avec Mme.Meyer (rôle Persos secondaires requis)\n.mas >> Permet de parler avec Mr.Massart (rôle Persos secondaires requis)\n.pj >> Permet de parler avec Mr.Belpois (rôle Persos secondaires requis)\n.mj >> Permet de parler avec Mme.Belpois (rôle Persos secondaires requis)\n.x >> Permet de parler avec X.A.N.A. (rôle Persos secondaires requis)\n")
         }
 
 });
