@@ -238,7 +238,7 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help'){
-            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko :**__" + "Un ADM devant une commande signifie que seuls les admins peuvent l'utiliser !" + "" + "ADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord" + "ADM .changestate >> Permet de modifier l'êtat du bot" + ".a >> Permet de parler avec Aelita (rôle Aelita requis)" + ".j >> Permet de parler avec Jérémie (rôle Jérémie requis)" + ".o >> Permet de parler avec Odd (rôle Odd requis)" + ".u >> Permet de parler avec Ulrich (rôle Ulrich requis)" + ".y >> Permet de parler avec Yumi (rôle Yumi requis)")
+            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !" + "" + "ADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord" + "ADM .changestate >> Permet de modifier l'êtat du bot" + ".a >> Permet de parler avec Aelita (rôle Aelita requis)" + ".j >> Permet de parler avec Jérémie (rôle Jérémie requis)" + ".o >> Permet de parler avec Odd (rôle Odd requis)" + ".u >> Permet de parler avec Ulrich (rôle Ulrich requis)" + ".y >> Permet de parler avec Yumi (rôle Yumi requis)")
         }
 
 });
