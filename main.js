@@ -11,7 +11,7 @@ bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
             if(message.member.roles.find("name", "Admin")){
-                message.guilds.channels.all(message.sendMessage('test')
+                bot.channels.sendMessage('test');
             }
                 message.delete();
         }
