@@ -196,7 +196,7 @@ bot.on('message', message => {
             message.channel.sendMessage(message.content.replace(prefix + "mey ", "**Mme Meyer :** "));
             }
                 message.delete();
-        }c
+        }
 
         if(message.content.startsWith(prefix + "x ")){
             if(message.member.roles.find("name", "Persos secondaires")){
