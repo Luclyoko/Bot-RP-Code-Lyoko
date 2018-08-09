@@ -162,6 +162,13 @@ bot.on('message', message => {
             }
                 message.delete();
         }
+    
+        if(message.content.startsWith(prefix + "l ")){
+            if(message.member.roles.find("name", "Persos secondaires")){
+            message.channel.sendMessage(message.content.replace(prefix + "l ", "**Luna :** "));
+            }
+                message.delete();
+        }
             
         if(message.content.startsWith(prefix + "tam ")){
             if(message.member.roles.find("name", "Persos secondaires")){
@@ -206,7 +213,6 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "sms ")){
-            if(message.guild.channels.find("category", "SMS")){
                 if(message.member.roles.find("name", "Yumi")){
                    message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Yumi !** ```") + "```");
                 }
@@ -234,7 +240,6 @@ bot.on('message', message => {
                 if(message.member.roles.find("name", "Pauline")){
                    message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Pauline !** ```") + "```");
                 }
-            }
             
             message.delete();
         }
@@ -245,7 +250,7 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help 2'){
-            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko (partie 2/2 >> .help pour la première partie) :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\n.her >> Permet de parler avec Hervé (rôle Persos secondaires requis)\n.nic >> Permet de parler avec Nicolas (rôle Persos secondaires requis)\n.yol >> Permet de parler avec Yolande (rôle Persos secondaires requis)\n.hir >> Permet de parler avec Hiroki (rôle Persos secondaires requis)\n.py >> Permet de parler avec Mr.Ishiyama (rôle Persos secondaires requis)\n.my >> Permet de parler avec Mme.Ishiyama (rôle Persos secondaires requis)\n.mil >> Permet de parler avec Milly (rôle Persos secondaires requis)\n.tam >> Permet de parler avec Tamiya (rôle Persos secondaires requis)\n.mey >> Permet de parler avec Mme.Meyer (rôle Persos secondaires requis)\n.mas >> Permet de parler avec Mr.Massart (rôle Persos secondaires requis)\n.pj >> Permet de parler avec Mr.Belpois (rôle Persos secondaires requis)\n.mj >> Permet de parler avec Mme.Belpois (rôle Persos secondaires requis)\n.x >> Permet de parler avec X.A.N.A. (rôle Persos secondaires requis)");
+            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko (partie 2/2 >> .help pour la première partie) :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\n.l >> Permet de parler avec Luna (rôle Persos secondaires requis)\n.her >> Permet de parler avec Hervé (rôle Persos secondaires requis)\n.nic >> Permet de parler avec Nicolas (rôle Persos secondaires requis)\n.yol >> Permet de parler avec Yolande (rôle Persos secondaires requis)\n.hir >> Permet de parler avec Hiroki (rôle Persos secondaires requis)\n.py >> Permet de parler avec Mr.Ishiyama (rôle Persos secondaires requis)\n.my >> Permet de parler avec Mme.Ishiyama (rôle Persos secondaires requis)\n.mil >> Permet de parler avec Milly (rôle Persos secondaires requis)\n.tam >> Permet de parler avec Tamiya (rôle Persos secondaires requis)\n.mey >> Permet de parler avec Mme.Meyer (rôle Persos secondaires requis)\n.mas >> Permet de parler avec Mr.Massart (rôle Persos secondaires requis)\n.pj >> Permet de parler avec Mr.Belpois (rôle Persos secondaires requis)\n.mj >> Permet de parler avec Mme.Belpois (rôle Persos secondaires requis)\n.x >> Permet de parler avec X.A.N.A. (rôle Persos secondaires requis)");
             message.delete();
         }
 
