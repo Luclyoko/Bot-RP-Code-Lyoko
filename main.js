@@ -206,32 +206,34 @@ bot.on('message', message => {
         }
 
         if(message.content.startsWith(prefix + "sms ")){
-            if(message.member.roles.find("name", "Yumi")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Yumi !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "Ulrich")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Ulrich !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "Odd")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Odd !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "Jérémie")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Jérémie !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "Aelita")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Aelita !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "William")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de William !** ```") + "```");
-            }
-            
-            if(message.member.roles.find("name", "Pauline")){
-               message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Pauline !** ```") + "```");
+            if(message.category.find("name", "SMS")){
+                if(message.member.roles.find("name", "Yumi")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Yumi !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "Ulrich")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Ulrich !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "Odd")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Odd !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "Jérémie")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Jérémie !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "Aelita")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message d'Aelita !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "William")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de William !** ```") + "```");
+                }
+
+                if(message.member.roles.find("name", "Pauline")){
+                   message.channel.sendMessage(message.content.replace(prefix + "sms ", "@here **Nouveau message de Pauline !** ```") + "```");
+                }
             }
             
             message.delete();
