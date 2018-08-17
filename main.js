@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-
+LIGNE POUR DESACTIVER LE BOT !
 var bot = new Discord.Client();
 var prefix = (".");
 
