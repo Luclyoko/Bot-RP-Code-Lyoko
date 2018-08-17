@@ -11,7 +11,7 @@ bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
             if(message.member.roles.find("name", "Narrateur")){
-                message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "@here __*") + "*__");
+                message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "@here ***") + "***");
             }
                 message.delete();
         }
