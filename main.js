@@ -10,8 +10,8 @@ bot.on('ready', () => {
 bot.on('message', message => {
     if(message.author.bot) return;
         if(message.content.startsWith(prefix + "annoncesrp ")){
-            if(message.member.roles.find("name", "Admin")){
-                message.channel.send('Ceci est une annonce !');
+            if(message.member.roles.find("name", "Narrateur")){
+                message.channel.sendMessage(message.content.replace(prefix + "annoncesrp ", "@here __*") + "*__");
             }
                 message.delete();
         }
@@ -245,7 +245,7 @@ bot.on('message', message => {
         }
     
         if(message.content === prefix + 'help'){
-            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko (partie 1/2 >> .help 2 pour la deuxième partie) :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\nADM .annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord\nADM .changestate >> Permet de modifier l'êtat du bot\n.sms >> Permet d'envoyer des SMS dans les salons appropriés (détecte votre rôle dans le RP)\n.a >> Permet de parler avec Aelita (rôle Aelita requis)\n.j >> Permet de parler avec Jérémie (rôle Jérémie requis)\n.o >> Permet de parler avec Odd (rôle Odd requis)\n.u >> Permet de parler avec Ulrich (rôle Ulrich requis)\n.y >> Permet de parler avec Yumi (rôle Yumi requis)\n.w >> Permet de parler avec William (rôle William requis)\n.p >> Permet de parler avec Pauline (rôle Pauline requis)\n.tyr >> Permet de parler avec Tyron (rôle Persos secondaires requis)\n.s >> Permet de parler avec Samantha (rôle Persos secondaires requis)\n.sis >> Permet de parler avec Sissi (rôle Persos secondaires requis)\n.jim >> Permet de parler avec Jim (rôle Persos secondaires requis)\n.del >> Permet de parler avec Delmas (rôle Persos secondaires requis)\n.hert >> Permet de parler avec Hertz (rôle Persos secondaires requis)");
+            message.channel.sendMessage("__**Liste des commandes du bot RP Code Lyoko (partie 1/2 >> .help 2 pour la deuxième partie) :**__" + "\nUn ADM devant une commande signifie que seuls les admins peuvent l'utiliser !\n\n.annoncesrp >> Permet d'afficher une annonce pour le rp dans tous les salons du discord (rôle Narrateur requis)\nADM .changestate >> Permet de modifier l'êtat du bot\n.sms >> Permet d'envoyer des SMS dans les salons appropriés (détecte votre rôle dans le RP)\n.a >> Permet de parler avec Aelita (rôle Aelita requis)\n.j >> Permet de parler avec Jérémie (rôle Jérémie requis)\n.o >> Permet de parler avec Odd (rôle Odd requis)\n.u >> Permet de parler avec Ulrich (rôle Ulrich requis)\n.y >> Permet de parler avec Yumi (rôle Yumi requis)\n.w >> Permet de parler avec William (rôle William requis)\n.p >> Permet de parler avec Pauline (rôle Pauline requis)\n.tyr >> Permet de parler avec Tyron (rôle Persos secondaires requis)\n.s >> Permet de parler avec Samantha (rôle Persos secondaires requis)\n.sis >> Permet de parler avec Sissi (rôle Persos secondaires requis)\n.jim >> Permet de parler avec Jim (rôle Persos secondaires requis)\n.del >> Permet de parler avec Delmas (rôle Persos secondaires requis)\n.hert >> Permet de parler avec Hertz (rôle Persos secondaires requis)");
             message.delete();
         }
     
