@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-
+DESACTIVATION !
 var bot = new Discord.Client();
 var prefix = (".");
 
