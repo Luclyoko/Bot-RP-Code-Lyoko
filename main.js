@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 var bot = new Discord.Client();
 var prefix = (".");
 
+BOT DESAC
+
 bot.on('ready', () => {
     console.log("Bot pret!");
 });
